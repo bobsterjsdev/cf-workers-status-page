@@ -16,38 +16,56 @@ settings:
 
 monitors:
   - id: bobsterjs-ml # unique identifier
-    name: bobsterjs.ml
+    name: BobsterJS
     url: 'https://www.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: weather-bobsterjs-ml # unique identifier
-    name: weather.bobsterjs.ml
+    name: BobsterJS Weather
     url: 'https://weather.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: clock-bobsterjs-ml # unique identifier
-    name: clock.bobsterjs.ml
+    name: BobsterJS Clock
     url: 'https://clock.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: stopwatch-bobsterjs-ml # unique identifier
-    name: stopwatch.bobsterjs.ml
+    name: BobsterJS Stopwatch
     url: 'https://stopwatch.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: social-bobsterjs-ml # unique identifier
-    name: social.bobsterjs.ml
+    name: BobsterJS Social
     url: 'https://social.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
   - id: digidev-bobsterjs-ml # unique identifier
-    name: digitaldev.bobsterjs.ml
+    name: Digital Development
     url: 'https://digitaldev.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: docs-digidev-bobsterjs-ml # unique identifier
+    name: Digital Development Documentation
+    url: 'https://docs.digitaldev.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: events-bobsterjs-ml # unique identifier
+    name: BobsterJS Events
+    url: 'https://events.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: chmr-bobsterjs-ml # unique identifier
+    name: Chiltern Hills Miniature Railway
+    url: 'https://chmr.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
