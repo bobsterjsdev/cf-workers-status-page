@@ -21,23 +21,32 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
 
+  - id: weather-bobsterjs-ml # unique identifier
+    name: weatheer.bobsterjs.ml
+    url: 'https://weather.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
   - id: clock-bobsterjs-ml # unique identifier
     name: clock.bobsterjs.ml
     url: 'https://clock.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    linkable: false # allows the title to be a link, default=true
 
   - id: stopwatch-bobsterjs-ml # unique identifier
     name: stopwatch.bobsterjs.ml
     url: 'https://stopwatch.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    linkable: false # allows the title to be a link, default=true
+
+  - id: social-bobsterjs-ml # unique identifier
+    name: social.bobsterjs.ml
+    url: 'https://social.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
 
   - id: digidev-bobsterjs-ml # unique identifier
     name: digitaldev.bobsterjs.ml
     url: 'https://digitaldev.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    linkable: false # allows the title to be a link, default=true
