@@ -9,8 +9,8 @@ const classes = {
 }
 
 export default function MonitorStatusHeader({ kvMonitorsLastUpdate }) {
-  let color = 'green'
-  let text = "hey lol"
+  let color = 'yellow'
+  let text = "Some websites may be unavailable while we do some work on the backend of our systems"
 
   return (
     <div className={`card mb-4 font-semibold ${classes[color]}`}>
