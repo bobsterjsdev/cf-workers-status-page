@@ -7,6 +7,7 @@ import config from '../config.yaml'
 import MonitorCard from '../src/components/monitorCard'
 import MonitorFilter from '../src/components/monitorFilter'
 import MonitorStatusHeader from '../src/components/monitorStatusHeader'
+import MonitorStatusAnnouncement from '../src/components/monitorStatusAnnouncement'
 import ThemeSwitcher from '../src/components/themeSwitcher'
 
 const MonitorStore = new Store({
@@ -69,6 +70,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
+        <MonitorStatusAnnouncement />
         {state.visible.map((monitor, key) => {
           return (
             <MonitorCard
