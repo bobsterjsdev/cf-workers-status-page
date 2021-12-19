@@ -22,7 +22,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
 
   - id: weather-bobsterjs-ml # unique identifier
-    name: weatheer.bobsterjs.ml
+    name: weather.bobsterjs.ml
     url: 'https://weather.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -48,5 +48,11 @@ monitors:
   - id: digidev-bobsterjs-ml # unique identifier
     name: digitaldev.bobsterjs.ml
     url: 'https://digitaldev.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: events-bobsterjs-ml # unique identifier
+    name: events.bobsterjs.ml
+    url: 'https://events.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
