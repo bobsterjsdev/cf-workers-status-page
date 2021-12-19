@@ -46,12 +46,26 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
       <Head>
         <title>{config.settings.title}</title>
         <link rel="stylesheet" href="./style.css" />
+        <script>
+          {`
+          function setTheme(theme) {
+            document.documentElement.classList.remove("dark", "light")
+            document.documentElement.classList.add(theme)
+            localStorage.theme = theme
+          }
+          
+          setTheme("dark")
+          `}
+        </script>
       </Head>
       <div className="container mx-auto px-4">
         <div className="flex flex-row justify-between items-center p-4">
           <div className="flex flex-row items-center">
             <img className="h-8 w-auto" src={config.settings.logo} />
             <h1 className="ml-4 text-3xl">{config.settings.title}</h1>
+          </div>
+          <div className="flex flex-row items-center">
+            <MonitorFilter active={slash} callback={filterByTerm} />
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
