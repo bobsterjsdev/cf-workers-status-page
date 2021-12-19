@@ -15,25 +15,29 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: bobsterjs.ml # unique identifier
+  - id: bobsterjs-ml # unique identifier
     name: bobsterjs.ml
-    description: 'Main website' # default=empty
     url: 'https://www.bobsterjs.ml/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+
+  - id: clock-bobsterjs-ml # unique identifier
+    name: clock.bobsterjs.ml
+    url: 'https://clock.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+  - id: stopwatch-bobsterjs-ml # unique identifier
+    name: stopwatch.bobsterjs.ml
+    url: 'https://stopwatch.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    linkable: false # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+  - id: digidev-bobsterjs-ml # unique identifier
+    name: digitaldev.bobsterjs.ml
+    url: 'https://digitaldev.bobsterjs.ml/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    linkable: false # allows the title to be a link, default=true
