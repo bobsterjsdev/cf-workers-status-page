@@ -70,7 +70,6 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           </div>
         </div>
         <MonitorStatusHeader kvMonitorsLastUpdate={kvMonitorsLastUpdate} />
-        <MonitorStatusAnnouncement />
         {state.visible.map((monitor, key) => {
           return (
             <MonitorCard
